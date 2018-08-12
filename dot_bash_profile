@@ -2,7 +2,8 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=1000000
 
 # lang
-export LANG=ja_JP.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # path
 export PATH=$PATH:~/bin:~/local/bin
