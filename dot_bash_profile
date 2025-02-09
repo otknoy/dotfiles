@@ -30,6 +30,7 @@ export PATH=$PATH:$HOME/go/bin
 
 # Java
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # python
 export PATH=$PATH:$HOME/.local/bin
@@ -62,3 +63,6 @@ complete -o default -o nospace -F __start_kubectl k
 
 # krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# talos
+eval "$(talosctl completion bash)"
