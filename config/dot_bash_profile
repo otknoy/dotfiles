@@ -18,18 +18,13 @@ eval "$(gh completion -s bash)"
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
-# direnv
-# export EDITOR=vi
-# eval "$(direnv hook bash)"
-
 # golang
-# export GOPATH=$HOME/go
-# export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
 
 # Java
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # python
 export PATH=$PATH:$HOME/.local/bin
@@ -52,13 +47,5 @@ source /home/otknoy/repos/jonmosco/kube-ps1/kube-ps1.sh
 # PS1='[\u@\h \W $(kube_ps1)]\$ '
 PS1='[\u@\h \W$(__git_ps1) $(kube_ps1)]\$ '
 kubeoff
-
-# k8s
-# kubectl
-source <(kubectl completion bash)
-alias k=kubectl
-# complete -F __start_kubectl k
-complete -o default -o nospace -F __start_kubectl k
-
-# krew
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+# talos
+eval "$(talosctl completion bash)"
