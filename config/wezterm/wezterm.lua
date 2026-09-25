@@ -10,9 +10,9 @@ config.initial_cols = 160
 config.initial_rows = 40
 
 config.font = wezterm.font 'UDEV Gothic NF'
-config.font_size = 13
+config.font_size = 12
 
-config.window_background_opacity = 0.85
+config.window_background_opacity = 0.8
 
 config.enable_tab_bar = false
 config.use_resize_increments = true
