@@ -8,6 +8,9 @@ export LC_ALL=ja_JP.UTF-8
 # path
 export PATH=$PATH:~/bin:~/local/bin
 
+# ssh-agent
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/openssh_agent"
+
 # git-prompt
 # PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 # gh
