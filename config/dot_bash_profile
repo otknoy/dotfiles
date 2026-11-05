@@ -52,3 +52,6 @@ PS1='[\u@\h \W$(__git_ps1) $(kube_ps1)]\$ '
 kubeoff
 # talos
 eval "$(talosctl completion bash)"
+
+# echonet
+source <(echonet completion bash)
